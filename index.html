@@ -33,15 +33,200 @@
 
       </header>
       <section>
-<h2><strong>Design, Testing and Best Practices for Inclusive User Experiences</strong></h2>
+<h1>Design, Testing and Best Practices for Inclusive User Experiences</h1>
 
-<p>WORK IN PROGRESS - please come back after August 25, 2017</p>
+<h2>A11y Testing tools</h2>
+
+<h3>Firefox Add-ons</h3>
+
 <!--
+<p><strong>You can also <a href="http://www.ub.edu/gtr/accessibility/radinamatic-tcworld15-ff-addons-a11y.zip">download all recommended Firefox add-ons as a single zipped *.xpi file</a></strong>.</p>
+<p>To install add-ons, follow these steps:<br>
+1. Unzip the downloaded file.<br>
+2. In Firefox main menu go to <strong>File > Open file...</strong><br>
+3. Browse for the <strong>radinamatic-tcworld15-ff-addons-a11y.xpi</strong> file and select it. 
+</p>
+<p>NOTE: This *.xpi package is made of official Firefox add-ons, so you don't have to worry about security alerts :)</p>
+-->
+
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/wave-accessibility-tool/">
+<h4>WAVE Web Accessibility Extension</h4>
+</a>
+
+WAVE extension gives feedback about accessibility to facilitate manual evaluation by injecting icons and indicators into the tested web page.
+
+
+<a href="https://addons.mozilla.org/EN-US/firefox/addon/openajax-accessibility-exte/">
+<h4>OpenAjax Alliance (OAA) Accessibility Extension</h4>
+</a>
+
+Sidebar presenting the full WCAG testing support with the possibility to generate and
+export reports.
+
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-sidebar/">
+<h4>AInspector Sidebar</h4>
+</a>
+
+Uses the OpenAjax open source evaluation library, rules and rulesets, but cannot generate reports, docs and latest release on GitHub.
+
+<a href="https://addons.mozilla.org/en-us/firefox/addon/axe-devtools/">
+<h4>aXe Accessibility Engine</h4>
+</a>
+
+Open-source accessibility testing tool by Deque.
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/colorblind-design/">
+<h4>Colorblind Design</h4>
+</a>
+
+Simulates colorblindness through a dedicated drop-down in the Responsive Design tool
+(needs updates).
+
+<a href="https://addons.mozilla.org/ca/firefox/addon/wcag-contrast-checker/">
+<h4>WCAG Contrast checker</h4>
+</a>
+
+Very complete sidebar contrast checker, on top of which is provided a filter to simulate 4 types of colorblindness.
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/fangs-screen-reader-emulator/">
+<h4>Fangs Screen Reader Emulator</h4>
+</a>
+
+Renders a text version of a web page similar to how a screen reader would read it. While somewhat outdated and not a substitute for testing with the screen-reader, it proved to be a useful first-time tool for inexperienced designers and developers, that helped to better understand how blind and visually impaired learners perceive a web application.
+
+<a href="https://addons.mozilla.org/en-uS/firefox/addon/juicy-studio-accessibility-too/">
+<h4>Juicy Studio Accessibility Toolbar</h4>
+</a>
+
+Good for checking ARIA features, tables and color contrast.
+
+
+<h3>Chrome Extensions</h3>
+
+
+<a href="https://chrome.google.com/webstore/detail/wave-evaluationtool/jbbplnpkjmmeebjpijfedlgcdilocofh">
+<h4>WAVE Evaluation Tool</h4>
+</a>
+
+Web accessibility evaluation tool developed by WebAIM.org.
+
+
+<a href="https://chrome.google.com/webstore/detail/accessibility-developert/fpkknkljclfencbdbgkenhalefipecmb">
+<h4>Accessibility Developer Tools</h4>
+</a>
+
+Adds an Accessibility audit, and an Accessibility sidebar pane in the Elements tab, to your Chrome Developer Tools.
+
+
+<a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd">
+<h4>aXe Accessibility Engine</h4>
+</a>
+
+Open-source accessibility testing tool by Deque.
+
+
+<a href="https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl">
+<h4>NoCoffee vision simulator</h4>
+</a>
+
+Evaluation tool helpful for understanding several vision problems and deficiencies.
+
+
+<a href="https://chrome.google.com/webstore/detail/spectrum/ofclemegkcmilinpcimpjkfhjfgmhieb">
+<h4>Spectrum</h4>
+</a>
+
+Evaluation tool for different types of color vision deficiency.
+
+<a href="https://chrome.google.com/webstore/detail/wcag-luminositycontrast/lllpnmpooomecmbmijbmbikaacgfdagi">
+<h4>WCAG Luminosity Contrast Ratio Analyzer</h4>
+</a>
+
+Pick colors, compute contrast, get suggestions & preview with challenged visions.
+
+
+<h3>Bookmarklets/Favelets (browser independent)</h3>
+
+
+<a href="http://khan.github.io/tota11y/">
+<h4>tota11y - an accessibility visualization toolkit</h4>
+</a>
+
+Helps visualize the most common accessibility violations (and successes).
+
+
+<a href="http://squizlabs.github.io/HTML_CodeSniffer/">
+<h4>HTML_CodeSniffer</h4>
+</a>
+
+Detects violations of both Web Content Accessibility Guidelines (WCAG) 2.0 (all three
+conformance levels), and the web-related components of the US. "Section 508" legislation.
+
+<a href="http://khan.github.io/tota11y/">
+<h4>Visual ARIA Bookmarklet</h4>
+</a>
+
+Allows any sighted person to physically see the use of ARIA on public websites.
+
+
+<a href="http://jimthatcher.com/favelets/">
+<h4>Jim Thatcher’s Favelets</h4>
+</a>
+
+Several handy a11y assessment favelets/bookmarklets.
+
+
+<h3>Color Contrast tools</h3>
+
+Variety of color and contrast tools that you may make available for the design team.
+
+
+<a href="http://www.paciellogroup.com/resources/contrastanalyser/">
+<h4>Contrast Analyzer</h4>
+</a>
+
+Standalone tool; provides a pass/fail check for WCAG 2.0 contrast criteria; simulates certain visual conditions.
+
+<a href="http://gmazzocato.altervista.org/colorwheel/wheel.php">
+<h4>Accessibility Color Wheel</h4>
+</a>
+
+Find an accessible color pair and compare contrast with simulation of three types of color deficiency: deuteranopia, protanopia and tritanopia.
+
+
+<a href="http://leaverou.github.io/contrast-ratio/">
+<h4>Contrast Ratio</h4>
+</a>
+
+
+<a href="http://colorsafe.co/">
+<h4>Color Safe</h4>
+</a>
+
+Accessible color palettes based on WCAG Guidelines of text and background contrast
+ratios.
+
+
+<a href="http://accessibility.oit.ncsu.edu/tools/color-contrast/">
+<h4>Color Palette Accessibility Evaluator</h4>
+</a>
+
+Online tool for analyzing color combinations that meet WCAG 2 a11y specifications.
+
+
+<a href="http://www.stainlessvision.com/blog/projects/colour-contrast-visualiser">
+<h4>Color Contrast Visualizer</h4>
+</a>
+
+SWF tool with Photoshop style color picker.
+
 <h3>PDF Accessibility with Acrobat Pro</h3>
 
 <p>To fully evaluate PDF files for accessibility you must have access to Adobe Acrobat Pro (<strong><a href="https://creative.adobe.com/products/download/acrobat">download the latest 30 days evaluation version</a></strong>).</p>
 
-<h3>PDF Accessibility Checker (PAC 2)</h3>
+<h4>PDF Accessibility Checker (PAC 2)</h4>
 
 <p><strong><a href="http://www.access-for-all.ch/en/pdf-lab/pdf-accessibility-checker-pac.html">http://www.access-for-all.ch/en/pdf-lab/pdf-accessibility-checker-pac.html</a></strong><br>
 Evaluates PDF files against checkpoints and failure conditions of the <a href="http://www.pdfa.org/publication/the-matterhorn-protocol-1/">Matterhorn Protocol (PDF/UA Conformance Testing Model)</a>.</p>
@@ -49,20 +234,21 @@ Evaluates PDF files against checkpoints and failure conditions of the <a href="h
 <h3>Other Resources</h3>
 <h4>Document Accessibility Toolbar</h4>
 
-	      <p><strong><a href="https://www.visionaustralia.org/business-and-professionals/digital-access-consulting/resources/document-accessibility-toolbar">Document Accessibility Toolbar</a></strong> - Vision Australia<br>
+        <p><strong><a href="https://www.visionaustralia.org/business-and-professionals/digital-access-consulting/resources/document-accessibility-toolbar">Document Accessibility Toolbar</a></strong> - Vision Australia<br>
 Accessibility ribbon menu for Microsoft Word that makes it quicker and easier to create accessible documents.</p>
 
-	      <h4>AccessODF</h4>
+        <h4>AccessODF</h4>
 
-	      <p><strong><a href="https://sourceforge.net/projects/accessodf/">AccessODF</a></strong> -  KU Leuven (AEGIS project, funded by European Commission).<br>
+        <p><strong><a href="https://sourceforge.net/projects/accessodf/">AccessODF</a></strong> -  KU Leuven (AEGIS project, funded by European Commission).<br>
 Accessibility checker for Writer, the word processing application in LibreOffice and Apache OpenOffice.org.</p>
 
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
-    </div>-->
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+
+<!--
+
+<p>WORK IN PROGRESS - please come back after August 25, 2017</p>
+
+-->
 		
   </body>
 </html>
